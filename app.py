@@ -202,6 +202,7 @@ def admin():
     conn.close(); return render_template('admin.html', requests=requests, tools=tools)
 
 
+init_db()
+
 if __name__ == '__main__':
-    init_db()
-    app.run(debug=True)
+    app.run(debug=False)
